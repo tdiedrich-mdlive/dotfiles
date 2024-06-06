@@ -46,6 +46,9 @@ alias swaps="cd ~/.local/state/nvim/swap/"
 # python
 alias python="python3"
 
+# notes
+alias notes="nvim ~/cigna"
+
 # p10k
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
