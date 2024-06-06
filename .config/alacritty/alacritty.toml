@@ -1,0 +1,15 @@
+import = ["~/.config/alacritty/themes/catpuccin-mocha.toml"]
+
+[font]
+size = 18.0
+
+[font.normal]
+family = "Cousine Nerd Font Mono"
+
+[window]
+decorations = "None"
+
+[window.padding]
+x = 4
+y = 4
+
