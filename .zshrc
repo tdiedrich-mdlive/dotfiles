@@ -53,9 +53,6 @@ alias python="python3"
 # mac copy pipe
 alias copy="pbcopy"
 
-# git
-alias gstat="git status"
-
 # mdlive dev env
 function mdlive () {
   (cd ~/mdlive/mdlive-dev-environment && make $1)
