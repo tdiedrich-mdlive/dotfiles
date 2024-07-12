@@ -33,6 +33,7 @@ alias zshconfig="nvim ~/.zshrc"
 # docker
 alias dcu="docker compose up"
 alias dcd="docker compose down"
+alias dcb="docker compose build"
 alias dcud="docker compose up -d"
 alias dcudb="docker compose up -d --build"
 alias dcubd="docker compose up -d --build"
@@ -51,6 +52,14 @@ alias python="python3"
 
 # mac copy pipe
 alias copy="pbcopy"
+
+# git
+alias gstat="git status"
+
+# mdlive dev env
+function mdlive () {
+  (cd ~/mdlive/mdlive-dev-environment && make $1)
+}
 
 # p10k
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme

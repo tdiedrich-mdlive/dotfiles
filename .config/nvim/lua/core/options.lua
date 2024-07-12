@@ -1,8 +1,8 @@
 vim.g.have_nerd_font = true
 
 vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.rnu = true
+
+-- vim.opt.statuscolumn = '%-2{v:relnum} %-3{v:lnum} %=%s'
 
 vim.opt.mouse = 'a'
 
@@ -17,8 +17,6 @@ vim.opt.undofile = true
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-
-vim.opt.signcolumn = 'yes'
 
 vim.opt.updatetime = 250
 
