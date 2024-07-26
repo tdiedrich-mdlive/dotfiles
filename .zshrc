@@ -45,10 +45,11 @@ alias vim="nvim"
 alias swaps="cd ~/.local/state/nvim/swap/"
 
 # notes
-alias notes="cd ~/cigna && nvim ."
+alias notes="cd ~/notes && nvim ."
 
 # python
 alias python="python3"
+alias pip="pip3"
 
 # mac copy pipe
 alias copy="pbcopy"

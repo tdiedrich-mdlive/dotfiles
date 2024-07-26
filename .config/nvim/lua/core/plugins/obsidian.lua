@@ -11,7 +11,7 @@ return {
       workspaces = {
         {
           name = 'work',
-          path = '~/cigna',
+          path = '~/notes',
         },
       },
       completion = {

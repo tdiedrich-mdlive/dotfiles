@@ -10,9 +10,6 @@ return {
         additional_vim_regex_highlighting = { 'ruby' },
       },
       indent = { enable = true, disable = { 'ruby' } },
-      autotag = {
-        enable = true,
-      },
     },
     config = function(_, opts)
       ---@diagnostic disable-next-line: missing-fields

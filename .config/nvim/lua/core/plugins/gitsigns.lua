@@ -27,9 +27,9 @@ return {
         map('n', '<leader>gk', gitsigns.prev_hunk, { desc = '[G]it Previous Hunk' })
 
         -- hunks
-        -- map('n', '<leader>gs', gitsigns.stage_hunk, { desc = '[G]it [s]tage Hunk' })
-        -- map('n', '<leader>gr', gitsigns.reset_hunk, { desc = '[G]it [r]eset Hunk' })
-        -- map('n', '<leader>gu', gitsigns.undo_stage_hunk, { desc = '[G]it [u]ndo Hunk Stage' })
+        map('n', '<leader>ghs', gitsigns.stage_hunk, { desc = '[G]it [H]unk [S]tage' })
+        map('n', '<leader>ghr', gitsigns.reset_hunk, { desc = '[G]it [H]unk [R]eset' })
+        map('n', '<leader>ghu', gitsigns.undo_stage_hunk, { desc = '[G]it [H]unk [U]ndo Stage' })
         -- map('v', '<leader>gs', function()
         --   gitsigns.stage_hunk { vim.fn.line '.', vim.fn.line 'v' }
         -- end, { desc = '[G]it [s]tage Hunk' })
@@ -39,7 +39,7 @@ return {
 
         -- buffer
         map('n', '<leader>gS', gitsigns.stage_buffer, { desc = '[G]it [S]tage Buffer' })
-        map('n', '<leader>gR', gitsigns.reset_buffer, { desc = '[G]it [R]tage Buffer' })
+        map('n', '<leader>gR', gitsigns.reset_buffer, { desc = '[G]it [R]eset Buffer' })
 
         -- diff
         map('n', '<leader>gd', gitsigns.diffthis, { desc = '[G]it [D]iff This' })
