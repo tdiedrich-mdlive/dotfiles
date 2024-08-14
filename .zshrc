@@ -54,10 +54,18 @@ alias pip="pip3"
 # mac copy pipe
 alias copy="pbcopy"
 
+# git
+alias gcan="git commit --amend --no-edit"
+function gsha () {
+  git log -1 --format='%H' | pbcopy
+  echo "$(git show  --pretty=format:%s -s HEAD)"
+}
+
 # mdlive dev env
 function mdlive () {
   (cd ~/mdlive/mdlive-dev-environment && make $1)
 }
+
 
 # p10k
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
