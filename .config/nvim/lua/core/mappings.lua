@@ -6,8 +6,6 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz', { noremap = true })
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
-vim.keymap.set('n', '-', vim.cmd.Ex)
-
 vim.keymap.set('n', '<leader>cb', '<cmd>:let @+=expand("%")<cr>', { desc = 'Get [C]urrent [B]uffer' })
 
 -- Diagnostic keymaps
