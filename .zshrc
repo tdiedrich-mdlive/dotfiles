@@ -40,20 +40,12 @@ alias dcubd="docker compose up -d --build"
 alias dps="docker ps"
 
 # neovim
-export EDITOR='nvim'
 alias v="nvim"
 alias vim="nvim"
 alias swaps="cd ~/.local/state/nvim/swap/"
 
 # notes
 alias notes="cd ~/notes && nvim ."
-function save-notes() {
-    local commit_message="${1:-'Auto-commit'}"
-    cd ~/notes || return
-    git add .
-    git commit -m "$commit_message"
-    git push origin main
-}
 
 # python
 alias python="python3"
@@ -65,33 +57,15 @@ alias copy="pbcopy"
 # git
 alias gcan="git commit --amend --no-edit"
 function gsha () {
-  local num_commits=${1:-1}
-
-  commits=$(git log -n $num_commits --pretty=format:"%H %s")
-
-  shas=$(echo "$commits" | awk '{print $1}' | tac | tr '\n' ' ')
-  messages=$(echo "$commits" | cut -d' ' -f2-)
-
-  echo "$shas" | pbcopy
-
-  local index=$num_commits
-  while read -r message; do
-    echo "$index.) $message"
-    index=$((index - 1 ))
-  done <<< "$messages"
+  git log -1 --format='%H' | pbcopy
+  echo "$(git show  --pretty=format:%s -s HEAD)"
 }
-
-# tmuxinator
-alias mux="tmuxinator"
 
 # mdlive dev env
 function mdlive () {
   (cd ~/mdlive/mdlive-dev-environment && make $1)
 }
 
-# fzf
-export FZF_DEFAULT_OPTS='--tmux'
-source <(fzf-tmux --zsh)
 
 # p10k
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
