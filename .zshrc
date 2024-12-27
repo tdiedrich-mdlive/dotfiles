@@ -28,6 +28,7 @@ source $ZSH/oh-my-zsh.sh
 
 # dotfiles config
 alias config="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias cst="config status"
 
 # zshrc
 alias zshconfig="nvim ~/.zshrc && source ~/.zshrc"
