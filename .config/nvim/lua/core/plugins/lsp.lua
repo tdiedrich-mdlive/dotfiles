@@ -58,7 +58,7 @@ return {
 
       local servers = {
         gopls = {},
-        tsserver = {},
+        ts_ls = {},
         lua_ls = {
           settings = {
             Lua = {
@@ -87,6 +87,23 @@ return {
           end,
         },
       }
+      --
+      -- local nvim_lsp = require 'lspconfig'
+      -- nvim_lsp.solargraph.setup {
+      --   cmd = { 'solargraph', 'stdio' },
+      --   root_dir = nvim_lsp.util.root_pattern('Gemfile', '.git', '.'),
+      --   settings = {
+      --     solargraph = {
+      --       autoformat = true,
+      --       completion = true,
+      --       diagnostic = true,
+      --       folding = true,
+      --       references = true,
+      --       rename = true,
+      --       symbols = true,
+      --     },
+      --   },
+      -- }
     end,
   },
 }

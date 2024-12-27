@@ -1,10 +1,10 @@
 # /Users/c8n5sr/.config/tmuxinator/mdlive.yml
 
-name: mdev
+name: mdlive
 root: ~/mdlive/
 
-# Runs on project start, always
 on_project_start: docker compose up -d provider-portal
+startup_window: provider
 
 windows:
   - dev-env:
